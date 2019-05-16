@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www/ros.org/wiki/xacro">
+  <link name="velodyne" />
+
+  <joint name="velodyne_joint" type="fixed">   
+<!--there is not any pivot or anything! -->	
+    <parent link="mid_mount" />
+    <child link="velodyne" />
+    <origin xyz="0 0 0.1" rpy="0 0 0" />
+<!--rpy: roll pitch yaw -->			
+  </joint>
+
+</robot>
